@@ -10,7 +10,7 @@ let len = arr.length
 	while(len>1){
 		res=res.sort((a,b)=>a-b)
 		let cost = res[0]+res[1]
-		mincost=costmin+cost
+		costmin=costmin+cost
 		let newarr;
 		newarr.push(...res.slice(2),cost)
 		res = newarr
