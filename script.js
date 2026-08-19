@@ -11,9 +11,10 @@ let len = arr.length
 		res=res.sort((a,b)=>a-b)
 		let cost = res[0]+res[1]
 		costmin=costmin+cost
-		let newarr;
-		newarr.push(...res.slice(2),cost)
-		res = newarr
+		
+		
+		res=res.splice(0,2)
+		res=res.push(cost)
 
 		len=len-1
 	}
